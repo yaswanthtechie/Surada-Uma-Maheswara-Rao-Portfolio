@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 1%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 263 70% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 350 90% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 263 70% 60%;
+
+    --radius: 1rem;
+
+    --gradient-indigo: 263 70% 60%;
+    --gradient-rose: 350 90% 65%;
+    --gradient-violet: 280 65% 65%;
+    --gradient-amber: 40 100% 65%;
+    --gradient-cyan: 190 95% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 px-6 md:px-12 lg:px-20;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .tech-badge {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--gradient-indigo) / 0.15), hsl(var(--gradient-rose) / 0.15));
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--foreground) / 0.8);
+  }
+
+  .tech-badge:hover {
+    @apply scale-105;
+    background: linear-gradient(135deg, hsl(var(--gradient-indigo) / 0.25), hsl(var(--gradient-rose) / 0.25));
+    box-shadow: 0 8px 32px hsla(var(--gradient-indigo) / 0.3);
+  }
+
+  .card-custom {
+    @apply rounded-2xl p-6 transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--card) / 0.5), hsl(var(--card) / 0.3));
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.3);
+    box-shadow: 0 8px 32px hsla(0 0% 0% / 0.3);
+  }
+
+  .card-custom:hover {
+    transform: translateY(-4px);
+    border-color: hsl(var(--border) / 0.5);
+    box-shadow: 0 12px 40px hsla(var(--gradient-indigo) / 0.2);
+  }
+
+  .section-gradient {
+    background: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card) / 0.2));
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
