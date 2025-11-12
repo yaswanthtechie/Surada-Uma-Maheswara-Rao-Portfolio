@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-foreground/60">
-              © 2025 MANOHAR REDDY. All rights reserved.
+              © 2025 SURADA UMA MAHESWARA RAO. All rights reserved.
             </p>
           </div>
 
@@ -20,14 +20,14 @@ const Footer = () => {
             <Button
               size="icon"
               className="bg-white/5 text-white border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-              onClick={() => window.open("https://github.com/kunreddymanohar1", "_blank")}
+              onClick={() => window.open("https://github.com/Umamahesh122003/", "_blank")}
             >
               <Github className="h-5 w-5" />
             </Button>
             <Button
               size="icon"
               className="bg-white/5 text-white border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-              onClick={() => window.location.href = "mailto:kunreddymanoharreddy@gmail.com"}
+              onClick={() => window.location.href = "mailto:sridharsurada33@gmail.com"}
             >
               <Mail className="h-5 w-5" />
             </Button>

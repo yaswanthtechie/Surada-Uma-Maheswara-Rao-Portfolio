@@ -82,7 +82,7 @@ export default function Navbar() {
           {/* Mobile Navigation Toggle */}
           <div className="flex md:hidden items-center justify-between gap-4">
             <span className="text-sm font-semibold text-white">
-              MANOHAR REDDY
+              SURADA UMA MAHESWARA RAO
             </span>
             <Button
               variant="ghost"

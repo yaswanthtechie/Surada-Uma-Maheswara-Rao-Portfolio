@@ -10,10 +10,10 @@ const Hero = () => {
   return (
     <section id="home">
       <HeroGeometric
-        badge="Software Engineer Intern"
+        badge="Full Stack Developer - AI"
         title1="Hi, I'm"
-        title2="MANOHAR REDDY"
-        description="Eager to build innovative web solutions with React, Java, Spring Boot, and RESTful APIs"
+        title2="SURADA UMA MAHESWARA RAO"
+        description="Motivated new graduate blending full stack engineering with AI/ML expertise to build scalable, intelligent applications"
       >
         <div className="flex flex-wrap gap-4 justify-center mb-8">
           <Button
@@ -36,7 +36,7 @@ const Hero = () => {
             size="lg"
             variant="outline"
             className="border-2 border-white/30 text-white bg-white/5 hover:bg-white/10 hover:border-white/50 shadow-lg transition-all duration-300 hover:scale-105"
-            onClick={() => window.open("https://github.com/kunreddymanohar1", "_blank")}
+            onClick={() => window.open("https://github.com/Umamahesh122003", "_blank")}
           >
             <Github className="mr-2 h-5 w-5" />
             GitHub

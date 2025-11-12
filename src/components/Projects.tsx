@@ -1,41 +1,41 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { BentoGrid, type BentoItem } from "@/components/ui/bento-grid";
-import { Calendar, Users } from "lucide-react";
+import { Camera, MessageCircle } from "lucide-react";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const projects: (BentoItem & { domain: string; github: string; demo: string })[] = [
     {
-      title: "Hospital Management System",
+      title: "Road Damage Detection Application",
       description:
-        "Comprehensive system using Java, Spring Boot, and SQL to manage patient records, appointments, billing, and leave approval. Optimized queries improved efficiency by 30%.",
-      icon: <Calendar className="w-4 h-4 text-blue-500" />,
+        "Automated road damage detection solution powered by YOLOv8, trained on CDRD 2022 for identifying longitudinal, transverse, alligator cracks, and potholes with 90% accuracy.",
+      icon: <Camera className="w-4 h-4 text-blue-500" />,
       status: "Completed",
-      tags: ["Java", "Spring Boot", "SQL", "REST APIs"],
-      domain: "Enterprise Tools",
-      github: "https://github.com/kunreddymanohar1/hospital-management-system1",
-      demo: "https://github.com/kunreddymanohar1/hospital-management-system1",
+      tags: ["Python", "YOLOv8", "OpenCV", "Computer Vision", "Deep Learning"],
+      domain: "AI & Computer Vision",
+      github: "https://github.com/Umamahesh122003/",
+      demo: "https://github.com/Umamahesh122003/",
       colSpan: 2,
       hasPersistentHover: true,
       cta: "View Project →",
     },
     {
-      title: "Employee Onboarding System",
+      title: "AI-Powered Chatbot & Recommendation System",
       description:
-        "Web-based onboarding platform built with HTML, CSS, JavaScript, and ReactJS. Responsive UI, form validations, dynamic workflows, and document management streamlined registration for 100+ users.",
-      icon: <Users className="w-4 h-4 text-emerald-500" />,
+        "Full-stack chatbot leveraging React, TypeScript, Node.js, and LangChain to integrate LLMs for conversational experiences, deployed via Dockerized CI/CD pipelines on AWS/GCP.",
+      icon: <MessageCircle className="w-4 h-4 text-emerald-500" />,
       status: "Completed",
-      tags: ["ReactJS", "JavaScript", "HTML5", "CSS3"],
-      domain: "Web Development",
-      github: "https://github.com/kunreddymanohar1/Employee-Onboarding-",
-      demo: "https://github.com/kunreddymanohar1/Employee-Onboarding-",
+      tags: ["React", "TypeScript", "Node.js", "LangChain", "LLMs", "AWS", "Docker"],
+      domain: "AI & Web Applications",
+      github: "https://github.com/Umamahesh122003/",
+      demo: "https://github.com/Umamahesh122003/",
       cta: "View Project →",
     },
   ];
 
-  const domains = ["All", "Web Development", "Full Stack Applications", "Enterprise Tools"];
+  const domains = ["All", "AI & Computer Vision", "AI & Web Applications"];
 
   const filteredProjects =
     activeFilter === "All"

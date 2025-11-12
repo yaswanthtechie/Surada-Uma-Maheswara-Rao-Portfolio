@@ -3,28 +3,43 @@ import { GraduationCap } from "lucide-react";
 const About = () => {
   const education = [
     {
-      degree: "B.Tech",
-      institution: "Guru Nanak Institutions Technical Campus, Hyderabad",
+      degree: "B.TECH, Civil Engineering (Minor in Computer Science and Engineering)",
+      institution: "Velagapudi Ramakrishna Siddhartha Engineering College",
       period: "2020 – 2024",
+    },
+    {
+      degree: "Intermediate",
+      institution: "KSN Junior College",
+      period: "2018 – 2020",
+    },
+    {
+      degree: "SSC",
+      institution: "Loyola EM School",
+      period: "2017 – 2018",
     },
   ];
 
   const technologies = [
-    "Java",
-    "Spring Boot",
-    "SQL",
+    "Python",
     "JavaScript",
-    "ReactJS",
-    "HTML5",
-    "CSS3",
-    "RESTful APIs",
-    "Git",
-    "GitHub",
-    "Postman",
+    "TypeScript",
+    "HTML",
+    "CSS",
+    "React",
+    "Angular",
+    "Node.js",
+    "Express.js",
+    "YOLOv8",
+    "OpenCV",
+    "TensorFlow",
+    "PyTorch",
+    "LangChain",
+    "Hugging Face",
     "AWS",
-    "Hibernate",
-    "Java 8",
-    "Agile (Scrum)",
+    "Docker",
+    "Kubernetes",
+    "Generative AI",
+    "MLOps",
   ];
 
   return (
@@ -40,7 +55,7 @@ const About = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-gradient-indigo to-gradient-rose mx-auto mb-8"></div>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-foreground/60">
-            Eager to apply strong web development skills and problem-solving abilities as a Software Engineer Intern, contributing to innovative software solutions. Committed to learning and excelling in a fast-paced, collaborative development environment.
+            Motivated new graduate aiming to excel as a Full Stack Developer - AI by combining strong programming capabilities with deep learning expertise. Passionate about delivering scalable web applications, integrating intelligent models, and enhancing user experiences within dynamic engineering teams.
           </p>
         </div>
 

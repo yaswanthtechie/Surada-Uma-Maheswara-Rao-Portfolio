@@ -1,36 +1,41 @@
-import { Code2, Database, Wrench, Shield, Cloud } from "lucide-react";
+import { Code2, Database, Wrench, Shield, Cloud, Cpu, Users, Globe } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages & Databases",
       icon: Code2,
-      skills: ["Java", "JavaScript", "SQL", "PHP"],
+      skills: ["Python", "JavaScript", "TypeScript", "HTML", "CSS", "React", "Angular", "Node.js", "Express.js"],
     },
     {
-      title: "Web Technologies & Frameworks",
-      icon: Code2,
-      skills: ["ReactJS", "HTML5", "CSS3", "Spring Boot", "RESTful APIs", "Responsive Web Design"],
+      title: "AI/ML Frameworks & Deep Learning",
+      icon: Cpu,
+      skills: ["YOLOv8", "OpenCV", "TensorFlow", "PyTorch", "Hugging Face", "LangChain", "Deep Learning"],
     },
     {
       title: "Development Tools & Methodologies",
-      icon: Wrench,
-      skills: ["Git", "GitHub", "Eclipse IDE", "Visual Studio Code", "Postman", "Agile (Scrum)"],
-    },
-    {
-      title: "Cloud & Operations",
       icon: Cloud,
-      skills: ["AWS Fundamentals", "Deployment", "Scalability"],
+      skills: ["AWS", "GCP", "Azure", "Docker", "Kubernetes", "CI/CD", "Cloud Deployments"],
     },
     {
-      title: "Core Java & Persistence",
+      title: "Databases",
       icon: Database,
-      skills: ["Advanced Java (JDBC)", "Hibernate", "Java 8", "OOPs"],
+      skills: ["SQL", "NoSQL"],
     },
     {
-      title: "Functional Skills",
-      icon: Shield,
-      skills: ["Problem-Solving", "Analytical Thinking", "Communication", "Collaboration", "Testing"],
+      title: "Tools & Concepts",
+      icon: Wrench,
+      skills: ["Git", "GitHub", "Computer Vision", "Image Processing", "Video Processing", "API Development", "Model Training", "MLOps"],
+    },
+    {
+      title: "Domain Knowledge",
+      icon: Globe,
+      skills: ["AI Product Lifecycle", "Generative AI", "Large Language Models (LLMs)", "Microservices"],
+    },
+    {
+      title: "Soft Skills",
+      icon: Users,
+      skills: ["Problem Solving", "Team Collaboration", "Performance Optimization"],
     },
   ];
 
